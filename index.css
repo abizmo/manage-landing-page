@@ -145,6 +145,7 @@ body {
   padding-bottom: var(--sp-8);
   display: grid;
   gap: var(--sp-12);
+  justify-items: center;
 }
 
 .form {
@@ -175,6 +176,7 @@ body {
 
 .menu__nav {
   display: grid;
+  align-content: start;
   gap: var(--sp-2);
 }
 
@@ -184,6 +186,17 @@ body {
 
 .socials {
   justify-content: space-evenly;
+  width: 100%;
+}
+
+.socials a:hover .socials__icon {
+  fill: hsl(var(--clr-primary-red));
+}
+
+.socials__icon {
+  width: var(--sp-8);
+  aspect-ratio: 1;
+  fill: hsl(var(--clr-neutral-900));
 }
 
 .attribution {
