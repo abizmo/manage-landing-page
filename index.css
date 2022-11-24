@@ -11,9 +11,9 @@
   --ff-sans: 'Be Vietnam Pro', sans-serif;
 
   --fs-500: 1rem;
-  --fs-400: .875rem;
-  --fs-300: .8125rem;
-  --fs-200: .75rem;
+  --fs-400: 0.875rem;
+  --fs-300: 0.8125rem;
+  --fs-200: 0.75rem;
   --fs-100: 0.6875rem;
 
   --sp-1: 0.25rem;
@@ -127,6 +127,7 @@ body {
   font-weight: 700;
   line-height: 1;
   font-size: var(--fs-300);
+  border: none;
 }
 
 .button-primary {
@@ -161,6 +162,7 @@ body {
   line-height: 1;
   color: hsl(var(--clr-neutral-300));
   outline: none;
+  border: none;
 }
 
 .menu {
