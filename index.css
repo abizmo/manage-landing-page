@@ -6,15 +6,28 @@
   --clr-neutral-700: 13 100% 96%;
   --clr-neutral-900: 0 0% 98%;
 
+  --br-1: var(--sp-8);
+
   --ff-sans: 'Be Vietnam Pro', sans-serif;
 
   --fs-500: 1rem;
+  --fs-400: .875rem;
+  --fs-300: .8125rem;
+  --fs-200: .75rem;
   --fs-100: 0.6875rem;
 
   --sp-1: 0.25rem;
   --sp-2: 0.5rem;
   --sp-3: 0.75rem;
   --sp-4: 1rem;
+  --sp-5: 1.25rem;
+  --sp-6: 1.5rem;
+  --sp-7: 1.75rem;
+  --sp-8: 2rem;
+  --sp-9: 2.25rem;
+  --sp-10: 2.5rem;
+  --sp-11: 2.75rem;
+  --sp-12: 3rem;
 }
 
 /* reset */
@@ -28,6 +41,7 @@
   margin: 0;
   padding: 0;
   font: inherit;
+  color: inherit;
 }
 
 html:focus-within {
@@ -79,17 +93,97 @@ body {
   font-size: var(--fs-500);
 }
 
+/* utility classes */
 .bg-dark {
   background-color: hsl(var(--clr-neutral-100));
   color: hsl(var(--clr-neutral-900));
 }
 
-/* TODO */
 .container {
   padding-inline: var(--sp-4);
+  margin-inline: auto;
+  max-width: 70rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.flex {
+  display: flex;
+}
+
+/* button */
+.button {
+  border-radius: var(--br-1);
+  height: var(--sp-12);
+  display: inline-flex;
+  align-items: center;
+  padding-inline: var(--sp-8);
+  font-weight: 700;
+  line-height: 1;
+  font-size: var(--fs-300);
+}
+
+.button-primary {
+  background-color: hsl(var(--clr-primary-red));
+  color: hsl(var(--clr-neutral-900));
+}
+
+.button-primary:hover {
+  filter: brightness(1.5);
 }
 
 /* footer */
+.footer-container {
+  padding-top: var(--sp-12);
+  padding-bottom: var(--sp-8);
+  display: grid;
+  gap: var(--sp-12);
+}
+
+.form {
+  width: 100%;
+  padding: var(--sp-2);
+  display: flex;
+  gap: var(--sp-2);
+}
+
+.form-input {
+  flex: 1;
+  border-radius: var(--br-1);
+  padding-inline: var(--sp-6);
+  font-size: var(--fs-300);
+  line-height: 1;
+  color: hsl(var(--clr-neutral-300));
+  outline: none;
+}
+
+.menu {
+  justify-self: center;
+  gap: 6.5rem;
+  font-size: var(--fs-400);
+  line-height: 1.7;
+  font-weight: 500;
+}
+
+.menu__nav {
+  display: grid;
+  gap: var(--sp-2);
+}
+
+.menu__nav > li:hover {
+  color: hsl(var(--clr-primary-red));
+}
+
+.socials {
+  justify-content: space-evenly;
+}
+
 .attribution {
   font-size: var(--fs-100);
   text-align: center;
