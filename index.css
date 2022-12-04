@@ -199,6 +199,10 @@ body {
   fill: hsl(var(--clr-neutral-900));
 }
 
+.footer__logo {
+  fill: hsl(var(--clr-neutral-900));
+  height: var(--sp-7);
+}
 .attribution {
   font-size: var(--fs-100);
   text-align: center;
