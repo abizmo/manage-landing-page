@@ -203,10 +203,18 @@ body {
   fill: hsl(var(--clr-neutral-900));
   height: var(--sp-7);
 }
+
+.copyright {
+  color: hsl(var(--clr-neutral-300));
+  font-size: var(--fs-200);
+}
+
 .attribution {
   font-size: var(--fs-100);
   text-align: center;
+  color: hsl(var(--clr-neutral-300));
 }
+
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(var(--clr-primary-red));
 }
