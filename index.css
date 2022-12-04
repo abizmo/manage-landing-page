@@ -168,7 +168,7 @@ body {
 
 .menu {
   justify-self: center;
-  gap: 6.5rem;
+  gap: clamp(6.5rem, -7.6818rem + 29.5454vw, 13rem);
   font-size: var(--fs-400);
   line-height: 1.7;
   font-weight: 500;
@@ -201,7 +201,6 @@ body {
 
 .footer__logo {
   fill: hsl(var(--clr-neutral-900));
-  height: var(--sp-7);
 }
 
 .copyright {
@@ -213,8 +212,57 @@ body {
   font-size: var(--fs-100);
   text-align: center;
   color: hsl(var(--clr-neutral-300));
+  padding-bottom: var(--sp-8);
 }
 
 .attribution a {
   color: hsl(var(--clr-primary-red));
+}
+
+@media (min-width: 50em) {
+  footer .button {
+    padding-inline: var(--sp-6);
+  }
+
+  .form {
+    grid-area: form;
+    justify-self: right;
+    padding: 0;
+  }
+
+  .form-input {
+    padding-inline: var(--sp-4);
+    max-width: 12.5rem;
+  }
+
+  .footer__logo {
+    grid-area: logo;
+    justify-self: start;
+  }
+
+  .menu {
+    grid-area: menu;
+    place-self: center;
+  }
+
+  .socials {
+    grid-area: socials;
+    gap: var(--sp-3);
+    justify-self: start;
+    align-self: end;
+  }
+
+  .socials__icon {
+    width: var(--sp-6);
+  }
+
+  .copyright {
+    grid-area: copy;
+    place-self: end;
+  }
+
+  .footer-container {
+    grid-template-areas: 'logo menu form' 'socials menu copy';
+    justify-content: space-between;
+  }
 }
