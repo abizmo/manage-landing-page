@@ -117,6 +117,10 @@ body {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 /* button */
 .button {
   border-radius: var(--br-1);
@@ -143,7 +147,6 @@ body {
 .footer-container {
   padding-top: var(--sp-12);
   padding-bottom: var(--sp-8);
-  display: grid;
   gap: var(--sp-12);
   justify-items: center;
 }
@@ -151,11 +154,10 @@ body {
 .form {
   width: 100%;
   padding: var(--sp-2);
-  display: flex;
   gap: var(--sp-2);
 }
 
-.form-input {
+.form__input {
   flex: 1;
   border-radius: var(--br-1);
   padding-inline: var(--sp-6);
@@ -168,19 +170,18 @@ body {
 
 .menu {
   justify-self: center;
-  gap: 6.5rem;
+  gap: clamp(6.5rem, -7.6818rem + 29.5454vw, 13rem);
   font-size: var(--fs-400);
   line-height: 1.7;
   font-weight: 500;
 }
 
 .menu__nav {
-  display: grid;
   align-content: start;
   gap: var(--sp-2);
 }
 
-.menu__nav > li:hover {
+.menu__item:hover {
   color: hsl(var(--clr-primary-red));
 }
 
@@ -189,19 +190,18 @@ body {
   width: 100%;
 }
 
-.socials a:hover .socials__icon {
-  fill: hsl(var(--clr-primary-red));
-}
-
 .socials__icon {
   width: var(--sp-8);
   aspect-ratio: 1;
   fill: hsl(var(--clr-neutral-900));
 }
 
-.footer__logo {
+.socials__icon:hover {
+  fill: hsl(var(--clr-primary-red));
+}
+
+.bg-dark .logo {
   fill: hsl(var(--clr-neutral-900));
-  height: var(--sp-7);
 }
 
 .copyright {
@@ -213,8 +213,57 @@ body {
   font-size: var(--fs-100);
   text-align: center;
   color: hsl(var(--clr-neutral-300));
+  padding-bottom: var(--sp-8);
 }
 
 .attribution a {
   color: hsl(var(--clr-primary-red));
+}
+
+@media (min-width: 50em) {
+  footer .button {
+    padding-inline: var(--sp-6);
+  }
+
+  .form {
+    grid-area: form;
+    justify-self: right;
+    padding: 0;
+  }
+
+  .form__input {
+    padding-inline: var(--sp-4);
+    max-width: 12.5rem;
+  }
+
+  .footer__logo {
+    grid-area: logo;
+    justify-self: start;
+  }
+
+  .menu {
+    grid-area: menu;
+    place-self: center;
+  }
+
+  .socials {
+    grid-area: socials;
+    gap: var(--sp-3);
+    justify-self: start;
+    align-self: end;
+  }
+
+  .socials__icon {
+    width: var(--sp-6);
+  }
+
+  .copyright {
+    grid-area: copy;
+    place-self: end;
+  }
+
+  .footer-container {
+    grid-template-areas: 'logo menu form' 'socials menu copy';
+    justify-content: space-between;
+  }
 }
