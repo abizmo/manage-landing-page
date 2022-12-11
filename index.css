@@ -29,6 +29,8 @@
   --sp-10: 2.5rem;
   --sp-11: 2.75rem;
   --sp-12: 3rem;
+  --sp-13: 3.5rem;
+  --sp-14: 4rem;
 }
 
 /* reset */
@@ -175,7 +177,11 @@ body {
   align-items: center;
   padding-block: 6rem;
   gap: var(--sp-8);
-  max-width: 22rem;
+}
+
+.cta__title {
+  text-align: center;
+  max-width: 20rem;
 }
 
 /* footer */
@@ -256,6 +262,25 @@ body {
 }
 
 @media (min-width: 50em) {
+  .bg-cta {
+    background-image: url('images/bg-simplify-section-desktop.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
+
+  .cta-container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-block: var(--sp-14);
+  }
+
+  .cta__title {
+    text-align: initial;
+    max-width: 28rem;
+    line-height: 1.2;
+  }
+
   footer .button {
     padding-inline: var(--sp-6);
   }
