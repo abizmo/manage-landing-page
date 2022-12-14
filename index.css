@@ -206,6 +206,7 @@ body {
 /* comments */
 .comments-container {
   padding-block: var(--sp-10);
+  padding-inline: var(--sp-4);
 }
 
 .comments__header {
@@ -242,16 +243,16 @@ body {
   border: 1px solid hsl(var(--clr-primary-red));
   border-radius: 50%;
   cursor: pointer;
-  padding: .25em;
+  padding: 0.25em;
 }
 
-.dot-indicators > *:hover, 
+.dot-indicators > *:hover,
 .dot-indicators > *:focus {
   background-color: hsl(var(--clr-primary-red));
   filter: brightness(1.3);
 }
 
-.dot-indicators > [aria-selected="true"] {
+.dot-indicators > [aria-selected='true'] {
   background-color: hsl(var(--clr-primary-red));
 }
 
