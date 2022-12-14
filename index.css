@@ -203,6 +203,59 @@ body {
   color: hsl(var(--clr-primary-red));
 }
 
+/* comments */
+.comments-container {
+  padding-block: var(--sp-10);
+}
+
+.comments__header {
+  margin-bottom: var(--sp-14);
+}
+
+.comment {
+  padding: var(--sp-10) var(--sp-8);
+  position: relative;
+}
+
+.comment__header {
+  margin-block: var(--sp-4);
+}
+
+.comment__avatar {
+  width: 72px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.dot-indicators {
+  margin-bottom: var(--sp-12);
+  margin-top: var(--sp-6);
+  gap: var(--sp-1);
+  justify-content: center;
+}
+
+.dot-indicators > * {
+  aspect-ratio: 1;
+  background-color: transparent;
+  border: 1px solid hsl(var(--clr-primary-red));
+  border-radius: 50%;
+  cursor: pointer;
+  padding: .25em;
+}
+
+.dot-indicators > *:hover, 
+.dot-indicators > *:focus {
+  background-color: hsl(var(--clr-primary-red));
+  filter: brightness(1.3);
+}
+
+.dot-indicators > [aria-selected="true"] {
+  background-color: hsl(var(--clr-primary-red));
+}
+
 /* cta */
 .bg-cta {
   background-image: url('images/bg-simplify-section-mobile.svg');
