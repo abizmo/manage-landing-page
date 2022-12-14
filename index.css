@@ -231,7 +231,6 @@ body {
 }
 
 .dot-indicators {
-  margin-bottom: var(--sp-12);
   margin-top: var(--sp-6);
   gap: var(--sp-1);
   justify-content: center;
@@ -254,6 +253,16 @@ body {
 
 .dot-indicators > [aria-selected="true"] {
   background-color: hsl(var(--clr-primary-red));
+}
+
+.action-container {
+  margin-top: var(--sp-12);
+}
+
+@media (min-width: 50em) {
+  .dot-indicators {
+    display: none;
+  }
 }
 
 /* cta */
