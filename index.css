@@ -218,6 +218,45 @@ body {
   position: relative;
 }
 
+.comment[data-hidden='true'] {
+  display: none;
+}
+
+@media (min-width: 50em) {
+  .comments-container {
+    padding-inline: 0;
+    overflow: hidden;
+  }
+
+  .carousel {
+    display: flex;
+    gap: 32px;
+    margin-inline: var(--sp-4);
+    height: 256px;
+    padding-top: 36px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+  }
+
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .comment {
+    height: 220px;
+    width: 540px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+  }
+
+  .comment[data-hidden='true'] {
+    display: block;
+  }
+}
+
 .comment__header {
   margin-block: var(--sp-4);
 }

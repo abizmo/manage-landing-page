@@ -52,9 +52,9 @@ function changeTabPanel({ target: targetTab }) {
 function hideContent(container, selector) {
   container
     .querySelectorAll(selector)
-    .forEach((element) => element.setAttribute('hidden', true));
+    .forEach((element) => element.setAttribute('data-hidden', true));
 }
 
 function showContent(container, selector) {
-  container.querySelector(selector).removeAttribute('hidden');
+  container.querySelector(selector).setAttribute('data-hidden', false);
 }
