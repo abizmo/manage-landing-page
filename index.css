@@ -12,7 +12,7 @@
 
   --fs-900: 2.375rem;
   --fs-800: 2rem;
-  --fs-600: 1.125rem;
+  --fs-600: 1.0625rem;
   --fs-500: 1rem;
   --fs-400: 0.875rem;
   --fs-300: 0.8125rem;
@@ -102,6 +102,11 @@ body {
 }
 
 /* utility classes */
+.bg-light {
+  background-color: hsl(var(--clr-neutral-700));
+  color: hsl(var(--clr-primary-blue));
+}
+
 .bg-grey {
   background-color: hsl(var(--clr-neutral-900));
   color: hsl(var(--clr-neutral-300));
@@ -228,6 +233,32 @@ body {
   flex-direction: column;
   gap: var(--sp-3);
   text-align: center;
+}
+
+.features {
+  padding-left: var(--sp-4);
+}
+
+.feature + .feature {
+  margin-top: var(--sp-11);
+}
+
+.feature__header {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-4);
+  border-radius: var(--br-1) 0 0 var(--br-1);
+  margin-bottom: var(--sp-2);
+  letter-spacing: -0.05em;
+}
+
+.feature__header span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--sp-14);
+  height: var(--sp-10);
+  border-radius: var(--br-1);
 }
 
 /* comments */
