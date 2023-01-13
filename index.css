@@ -146,6 +146,12 @@ body {
   font-weight: 700;
 }
 
+.fs-200 {
+  font-size: var(--fs-200);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
 .fs-300 {
   font-size: var(--fs-300);
   line-height: 1;
@@ -567,10 +573,6 @@ body {
   gap: var(--sp-2);
 }
 
-.menu__item:hover {
-  color: hsl(var(--clr-primary-red));
-}
-
 .socials {
   justify-content: space-evenly;
   width: 100%;
@@ -590,17 +592,22 @@ body {
   fill: hsl(var(--clr-neutral-900));
 }
 
-.copyright {
+.copyright,
+.attribution {
   color: hsl(var(--clr-neutral-300));
 }
 
 .attribution {
   text-align: center;
-  color: hsl(var(--clr-neutral-300));
   padding-bottom: var(--sp-8);
 }
 
 .attribution a {
+  color: hsl(var(--clr-neutral-900));
+}
+
+.menu__item:hover,
+.attribution a:hover {
   color: hsl(var(--clr-primary-red));
 }
 
