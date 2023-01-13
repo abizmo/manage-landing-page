@@ -318,8 +318,8 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: var(--sp-14);
-  height: var(--sp-10);
+  width: var(--sp-15);
+  height: var(--sp-9);
   border-radius: var(--br-1);
   letter-spacing: -0.02em;
 }
