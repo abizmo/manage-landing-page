@@ -42,7 +42,7 @@
   --sp-20: 7rem;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 70em) {
   :root {
     --fs-900: 3.375rem;
     --fs-800: 2.4375rem;
@@ -183,7 +183,7 @@ body {
   line-height: 1.3;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 70em) {
   .fs-600 {
     line-height: 1.6;
   }
@@ -271,7 +271,7 @@ body {
 .title {
 }
 
-@media (min-width: 50em) {
+@media (min-width: 70em) {
   .title {
   }
 }
@@ -297,7 +297,7 @@ body {
   max-width: 20rem;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 70em) {
   .hero-container {
     flex-direction: row;
     align-items: start;
@@ -372,7 +372,7 @@ body {
   padding-right: var(--sp-4);
 }
 
-@media (min-width: 50em) {
+@media (min-width: 70em) {
   .features-container {
     flex-direction: row;
     gap: var(--sp-7);
@@ -431,7 +431,7 @@ body {
   display: none;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 70em) {
   .comments-container {
     padding-inline: 0;
     overflow: hidden;
@@ -512,7 +512,7 @@ body {
   margin-top: var(--sp-12);
 }
 
-@media (min-width: 50em) {
+@media (min-width: 70em) {
   .dot-indicators {
     display: none;
   }
@@ -611,7 +611,7 @@ body {
   color: hsl(var(--clr-primary-red));
 }
 
-@media (min-width: 50em) {
+@media (min-width: 70em) {
   .bg-cta {
     background-image: url('images/bg-simplify-section-desktop.svg');
     background-size: 100%;
