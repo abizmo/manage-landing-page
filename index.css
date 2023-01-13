@@ -242,6 +242,7 @@ body {
   display: inline-flex;
   align-items: center;
   padding-inline: var(--sp-8);
+  border: none;
   font-weight: 700;
   font-size: var(--fs-300);
   line-height: 1;
