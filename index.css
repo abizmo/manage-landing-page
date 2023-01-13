@@ -289,6 +289,8 @@ body {
   flex-direction: column;
   gap: var(--sp-3);
   text-align: center;
+  padding-inline: var(--sp-8);
+  margin-inline: auto;
 }
 
 .features {
@@ -321,6 +323,9 @@ body {
   border-radius: var(--br-1);
   letter-spacing: -0.02em;
 }
+
+.feature__body {
+  padding-right: var(--sp-4);
 }
 
 @media (min-width: 50em) {
