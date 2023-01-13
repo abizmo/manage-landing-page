@@ -138,7 +138,7 @@ body {
 }
 
 .container {
-  padding-inline: var(--sp-4);
+  padding-inline: var(--sp-5);
   margin-inline: auto;
   max-width: 70rem;
 }
@@ -339,7 +339,7 @@ body {
 }
 
 .features {
-  padding-left: var(--sp-4);
+  padding-left: var(--sp-5);
 }
 
 .features-container p {
@@ -370,7 +370,7 @@ body {
 }
 
 .feature__body {
-  padding-right: var(--sp-4);
+  padding-right: var(--sp-5);
 }
 
 @media (min-width: 70em) {
