@@ -20,7 +20,6 @@
   --fs-200: 0.75rem;
   --fs-100: 0.6875rem;
 
-  /* TODO: Revisar los usos de las variables */
   --sp-1: 0.25rem;
   --sp-2: 0.5rem;
   --sp-3: 0.75rem;
@@ -29,8 +28,8 @@
   --sp-6: 1.5rem;
   --sp-7: 1.75rem;
   --sp-8: 2rem;
-  --sp-9: 2.5rem;
-  --sp-10: 2.75rem;
+  --sp-9: 2.25rem;
+  --sp-10: 2.5rem;
   --sp-11: 2.75rem;
   --sp-12: 3rem;
   --sp-13: 3.25rem;
@@ -327,7 +326,7 @@ body {
 .features-container {
   flex-direction: column;
   padding-block: var(--sp-6);
-  gap: var(--sp-15);
+  gap: var(--sp-13);
 }
 
 .features__header {
@@ -346,7 +345,7 @@ body {
 }
 
 .feature + .feature {
-  margin-top: var(--sp-11);
+  margin-top: var(--sp-12);
 }
 
 .feature__header {
@@ -389,7 +388,7 @@ body {
   }
 
   .features {
-    padding-left: var(--sp-2);
+    padding-left: initial;
   }
 
   .features__header {
@@ -415,8 +414,8 @@ body {
 }
 /* comments */
 .comments-container {
-  padding-block: var(--sp-10);
-  padding-inline: var(--sp-4);
+  padding-block: var(--sp-9);
+  padding-inline: var(--sp-5);
 }
 
 .comments__title {
@@ -550,7 +549,6 @@ body {
 
 .form {
   width: 100%;
-  padding: var(--sp-2);
   gap: var(--sp-2);
 }
 
