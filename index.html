@@ -28,13 +28,27 @@
       <div class="container">
         <div class="nav-wrapper">
           <a href="#">
-            <svg class="logo" width="90" height="18">
+            <svg class="logo">
               <use xlink:href="images/logo.svg#logo"></use>
             </svg>
           </a>
-          <button aria-controls="primary-navigation" aria-expanded="false">
-            <img src="./images/icon-hamburger.svg" alt="" aria-hidden="true" />
-            <img src="./images/icon-close.svg" alt="" aria-hidden="true" />
+          <button
+            class="sm-nav-toggle"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+          >
+            <img
+              class="menu-icon"
+              src="./images/icon-hamburger.svg"
+              alt=""
+              aria-hidden="true"
+            />
+            <img
+              class="close-icon"
+              src="./images/icon-close.svg"
+              alt=""
+              aria-hidden="true"
+            />
             <span class="sr-only">Menu</span>
           </button>
           <nav class="primary-navigation" id="primary-navigation">
@@ -46,7 +60,7 @@
               <li><a href="#">Community</a></li>
             </ul>
           </nav>
-          <button class="button button-primary">Get Started</button>
+          <button class="button button-primary sm-hidden">Get Started</button>
         </div>
       </div>
     </header>
