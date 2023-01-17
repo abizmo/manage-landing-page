@@ -280,7 +280,7 @@ body {
   position: absolute;
   width: 80%;
   aspect-ratio: 1 / 1.5;
-  top: -65%;
+  top: -80px;
   right: 0;
   background-image: url(./images/bg-tablet-pattern.svg);
   background-position: bottom left;
@@ -290,9 +290,9 @@ body {
 }
 
 @media (min-width: 70em) {
-  .picture-with-bg-image::before {
+  .with-bg-image::before {
     width: 45%;
-    top: -100%;
+    top: -10%;
   }
 }
 
