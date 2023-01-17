@@ -275,6 +275,10 @@ body {
   .title {
   }
 }
+/* header */
+.primary-header {
+  padding-block: var(--sp-10);
+}
 /* hero-section */
 .hero-container {
   flex-direction: column-reverse;

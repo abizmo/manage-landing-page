@@ -24,6 +24,32 @@
     <script src="index.js" defer></script>
   </head>
   <body>
+    <header class="primary-header">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#">
+            <svg class="logo" width="90" height="18">
+              <use xlink:href="images/logo.svg#logo"></use>
+            </svg>
+          </a>
+          <button aria-controls="primary-navigation" aria-expanded="false">
+            <img src="./images/icon-hamburger.svg" alt="" aria-hidden="true" />
+            <img src="./images/icon-close.svg" alt="" aria-hidden="true" />
+            <span class="sr-only">Menu</span>
+          </button>
+          <nav class="primary-navigation" id="primary-navigation">
+            <ul aria-label="Primary" role="list" class="nav-list">
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Product</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Community</a></li>
+            </ul>
+          </nav>
+          <button class="button button-primary">Get Started</button>
+        </div>
+      </div>
+    </header>
     <main>
       <section id="hero" class="flex container hero-container">
         <div class="grid hero__header">
