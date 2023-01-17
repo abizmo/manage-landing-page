@@ -334,6 +334,39 @@ body {
   line-height: 1.7;
   letter-spacing: -0.03em;
 }
+
+@media (min-width: 70em) {
+  .primary-header {
+    padding-block: var(--sp-16);
+  }
+
+  .primary-header .logo {
+    width: 146px;
+    height: 24px;
+  }
+
+  .sm-nav-toggle {
+    display: none;
+  }
+
+  .primary-navigation {
+    position: initial;
+    display: block;
+  }
+
+  .primary-header[data-overlay]::before {
+    content: none;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: var(--sp-8);
+    font-size: var(--fs-300);
+    line-height: 1;
+    letter-spacing: 0;
+  }
+}
+
 /* hero-section */
 .hero-container {
   flex-direction: column-reverse;
