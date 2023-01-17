@@ -25,9 +25,28 @@
   </head>
   <body>
     <main>
+      <section id="hero" class="flex container hero-container">
+        <div class="grid hero__header">
+          <h1 class="fs-900 title bold blue-text">
+            Bring everyone together to build better products.
+          </h1>
+          <p class="fs-600 subtitle">
+            Manage makes it simple for software teams to plan day-to-day tasks
+            while keeping the larger team goals in view.
+          </p>
+          <button type="submit" class="button button-primary">
+            Get Started
+          </button>
+        </div>
+        <div class="hero__image">
+          <img src="./images/illustration-intro.svg" alt="manage intro" />
+        </div>
+      </section>
       <section id="features" class="flex features-container">
-        <div class="flex container features__header">
-          <h2 class="title bold blue-text">What’s different about Manage?</h2>
+        <div class="flex features__header">
+          <h2 class="fs-800 ls-md title bold blue-text">
+            What’s different about Manage?
+          </h2>
           <p>
             Manage provides all the functionality your team needs, without the
             complexity. Our software is tailor-made for modern digital product
@@ -36,7 +55,7 @@
         </div>
         <ul class="features" role="list">
           <li class="feature">
-            <h3 class="feature__header bold fs-600">
+            <h3 class="feature__header bold fs-700">
               <span class="bg-red">01</span>Track compay-wide progress
             </h3>
             <p class="feature__body">
@@ -46,7 +65,7 @@
             </p>
           </li>
           <li class="feature">
-            <h3 class="feature__header bold fs-600">
+            <h3 class="feature__header bold fs-700">
               <span class="bg-red">02</span>Advanced built-in reports
             </h3>
             <p class="feature__body">
@@ -56,7 +75,7 @@
             </p>
           </li>
           <li class="feature">
-            <h3 class="feature__header bold fs-600">
+            <h3 class="feature__header bold fs-700">
               <span class="bg-red">03</span>Everything you need in one place
             </h3>
             <p class="feature__body">
@@ -68,7 +87,9 @@
         </ul>
       </section>
       <section id="comments" class="comments-container">
-        <h2 class="title comments__title bold blue-text">What they've said</h2>
+        <h2 class="fs-800 ls-md title comments__title bold blue-text">
+          What they've said
+        </h2>
         <div class="carousel">
           <article
             class="comment bg-grey text-center"
@@ -177,9 +198,7 @@
       </section>
       <section id="cta" class="bg-red bg-cta">
         <div class="container cta-container flex">
-          <h2 class="fs-900 bold cta__title">
-            Simplify how your team works today.
-          </h2>
+          <h2 class="bold cta__title">Simplify how your team works today.</h2>
           <button type="submit" class="button button-secondary">
             Get Started
           </button>
@@ -251,9 +270,9 @@
         <svg class="logo" width="146" height="24">
           <use xlink:href="images/logo.svg#logo"></use>
         </svg>
-        <p class="copyright">Copyright 2020. All Rights Reserved</p>
+        <p class="fs-200 copyright">Copyright 2020. All Rights Reserved</p>
       </div>
-      <div class="attribution">
+      <div class="fs-200 attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
