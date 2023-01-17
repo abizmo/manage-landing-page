@@ -703,6 +703,7 @@ body {
   .form__input {
     padding-inline: var(--sp-4);
     max-width: 12.5rem;
+    height: var(--sp-12);
   }
 
   .footer__logo {
