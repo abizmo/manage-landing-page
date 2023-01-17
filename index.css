@@ -330,7 +330,7 @@ body {
   justify-items: center;
   color: hsl(var(--clr-primary-blue));
   font-size: var(--fs-700);
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.7;
   letter-spacing: -0.03em;
 }
