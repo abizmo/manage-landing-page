@@ -271,6 +271,31 @@ body {
   box-shadow: 0px 16px 20px -16px hsl(var(--clr-neutral-100) / 0.3);
 }
 
+.with-bg-image {
+  position: relative;
+}
+
+.with-bg-image::before {
+  content: '';
+  position: absolute;
+  width: 80%;
+  aspect-ratio: 1 / 1.5;
+  top: -65%;
+  right: 0;
+  background-image: url(./images/bg-tablet-pattern.svg);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+@media (min-width: 70em) {
+  .picture-with-bg-image::before {
+    width: 45%;
+    top: -100%;
+  }
+}
+
 /* header */
 .primary-header {
   padding-block: var(--sp-10);
@@ -352,6 +377,7 @@ body {
   .primary-navigation {
     position: initial;
     display: block;
+    background-color: transparent;
   }
 
   .primary-header[data-overlay]::before {
