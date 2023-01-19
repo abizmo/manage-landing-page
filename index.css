@@ -294,10 +294,19 @@ body {
   width: 45%;
   top: -30%;
 }
+
 @media (min-width: 70em) {
   .with-bg-image::before {
     width: 45%;
     top: -10%;
+  }
+
+  .with-bg-image-sm::before {
+    aspect-ratio: 1 / 1.7;
+    width: 45%;
+    left: -35%;
+    top: 50%;
+    background-position: top right;
   }
 }
 
@@ -560,6 +569,8 @@ body {
 
 @media (min-width: 70em) {
   .comments-container {
+    margin-bottom: var(--sp-15);
+    padding-block: var(--sp-20);
     padding-inline: 0;
     overflow: hidden;
   }
